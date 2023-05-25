@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\DB;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,5 +23,6 @@ Route::get('/pelanggan','App\Http\Controllers\PelangganController@index');
 Route::get('/pelanggan/create','App\Http\Controllers\PelangganController@create');
 Route::post('/pelanggan/store','App\Http\Controllers\PelangganController@store');
 Route::get('/pelanggan/ubah/{id}','App\Http\Controllers\PelangganController@ubah');
-Route::post('/pelanggan/update','App\Http\Controllers\PelangganController@update');
 Route::get('/pelanggan/hapus/{id}','App\Http\Controllers\PelangganController@hapus');
+Route::post('/pelanggan/update/{id}','App\Http\Controllers\PelangganController@update');
+

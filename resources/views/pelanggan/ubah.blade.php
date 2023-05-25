@@ -16,7 +16,7 @@
     <h2>Silahkan ubah data pelanggan Sederhana dibawah ini</h2>
     </center>
     @foreach ($pelanggan as $p)
-	<form action="/pelanggan/store" method="post">
+	<form action="/pelanggan/update/{{ $p->id }}" method="post">
 		{{ csrf_field() }}
         <div class="mb-3">
 		<label for="exampleInputEmail1" class="form-label">Nama pelanggan</label><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama_pelanggan" required="required" placeholder="nama pelanggan" value="{{ $p->nama_pelanggan }}"><br/>

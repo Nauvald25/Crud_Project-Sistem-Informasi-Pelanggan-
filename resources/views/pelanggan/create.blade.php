@@ -18,7 +18,7 @@
 	<form action="/pelanggan/store" method="post">
 		{{ csrf_field() }}
         <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Id pelanggan</label><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id" required="required" placeholder="id pelanggan"><br/>
+            <label for="exampleInputEmail1" class="form-label">Id pelanggan</label><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id" required="required" placeholder="id pelanggan"><br/>
 		<label for="exampleInputEmail1" class="form-label">Nama pelanggan</label><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama_pelanggan" required="required" placeholder="nama pelanggan"><br/>
 		<label for="exampleInputEmail1" class="form-label">No telepon</label><input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="no_telepon" required="required" placeholder="no telepon"><br/>
         <label for="floatingTextarea" class="form-label">Alamat</label><textarea class="form-control" placeholder="Alamat" id="floatingTextarea" required="required" name="alamat"></textarea><br/>
